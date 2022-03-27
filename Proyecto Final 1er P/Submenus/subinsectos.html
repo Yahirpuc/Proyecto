@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+    <title>Insectos</title>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(https://img.freepik.com/vector-gratis/deja-fondo-papel-metalico_79603-936.jpg?w=740&t=st=1648338577~exp=1648339177~hmac=d5f552d1ca64ad7f996022c8d8ab037582d0c82edbfa174071116b14474111b7);
+    /* Esta seccion es formato de fondo (quitar mosaico, ajustar, etc*/
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+    /*Aqui acaba la seccion formato de fondo pagina*/
+}
+
+.container__background-triangle{
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family:Comic Sans MS; color: rgb(255, 255, 255); background-color: rgb(16, 80, 26); border: 1px solid black; text-align: center;
+}
+h4{font-family: 'Courier New', Courier, monospace; color: rgb(255, 255, 255); background-color:  rgb(16, 80, 26);border: 1px solid rgb(0, 0, 0); text-align: center;}
+
+@keyframes t1 {
+    0%{
+        transform: rotate(45deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(45deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+@keyframes t2 {
+    0%{
+        transform: rotate(65deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(65deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(65deg) translateY(0px);
+    }
+}
+
+@keyframes t3 {
+    0%{
+        transform: rotate(45deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(45deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+
+.container__cards{
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card{
+    width: 350px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card:hover .cover__card img{
+    transform: scale(1.1);
+}
+
+.cover__card{
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.cover__card img{
+    width: 110%;
+    transition: all 300ms;
+}
+
+.card h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: rgb(7, 7, 7);
+}
+
+.card p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.5px;
+}
+
+.card hr{
+    margin-top: 30px;
+    border: none;
+    height: 0.2px;
+    background: #41414138;
+}
+
+.footer__card{
+    margin-top: 10px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.footer__card h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1200px) {
+    .container__cards{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+</style>
+<body>
+    <h1>Insectos</h1>
+
+
+    <div class="container__cards">
+        <div class="card">
+            <div class="cover__card">
+            
+                <img src="https://www.yavendras.com/imgs/ejemplos/insectos.jpg" alt="">
+            </div>
+            <br>
+            <h4>Abeja</h4>
+            <h2>Anthophila</h2>
+            <p>las abejas se agrupan en clonias llamadas enjambres y estas habitan en las colmenas</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="../Paginas/insectos1.html"> Ver sitio.</a></h3>
+                <i>Bertha Huerta</i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cover__card">
+                <img src="https://www.caracteristicas.co/wp-content/uploads/2018/10/escarabajo-e1583723107229.jpg" alt="">
+            </div>
+            <br>
+            <h4>Escarabajo</h4>
+            <h2>Coleoptera, coleópteros</h2>
+            <p>los escarabajos se encuantran en todo nuestro planeta, incluso viven en madrigueras de animales en el ártico</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="../Paginas/insectos2.html">Ver sitio</a></h3>
+                <i>Bertha Huerta</i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cover__card">
+                <img src="https://www.lifeder.com/wp-content/uploads/2021/12/libelula.jpg" alt="">
+            </div>
+            <br>
+            <h4>Libelula</h4>
+            <h2>Anisopteros</h2>
+            <p>Se conoce como libelula, caballito del diablo a ciertp tipo de animales voladores, pertenecientes al infraorden de los anisópteros, que hacen vida al rededor de lagos, charcas, rios y regiones pantanosas, y son fácilmemte reconocibles por su par de alas dobles y transparentes y su cuerpo largo y tubular</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="https://concepto.de/libelula/#:~:text=Caracter%C3%ADsticas%20de%20las%20lib%C3%A9lulas,-Las%20lib%C3%A9lulas%20poseen&text=Las%20lib%C3%A9lulas%20se%20caracterizan%20por,y%20tres%20pares%20de%20patas">Ver sitio</a></h3>
+                <i>Bertha Huerta</i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cover__card">
+                <img src="https://www.caracteristicas.co/wp-content/uploads/2018/09/mariposas-1-e1579802223127.jpg" alt="">
+            </div>
+            <br>
+            <h4>Mariposa</h4>
+            <h2>Lepidoptera</h2>
+            <p>Muchas especies de mariposas recorren cientos de kilómetros en sus viajes de una geograía o otra, de acuerdo a las tendencias climáticas, para reproducirse y desovar.</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="https://concepto.de/mariposas/">Ver sitio</a></h3>
+                <i>Bertha Huerta</i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cover__card">
+                <img src="https://ichef.bbci.co.uk/news/640/amz/worldservice/live/assets/images/2014/09/22/140922024016_sp_hormigas_624x351_thinkstock_nocredit.jpg " alt="">
+            </div>
+            <br>
+            <h4>Hormiga</h4>
+            <h2>Formididae </h2>
+            <p>Las hormigas son insectos de tamaño pequeño, oscilando entre 2 y 25 milimetros y variando en coloración desde el negro al marrón, rojo o amarillo.</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="https://www.caracteristicas.co/hormigas/#:~:text=Las%20hormigas%20son%20insectos%20de,o%20g%C3%A1ster%20(abdomen%20final)">Ver sitio</a></h3>
+                <i>Bertha Huerta</i>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    
+</body>
+</html>
