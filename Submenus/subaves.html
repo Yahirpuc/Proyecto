@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+    <title>AVES</title>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(https://ae01.alicdn.com/kf/HTB1B6GQaHY1gK0jSZTEq6xDQVXap/Yeele-Autumn-Grassland-Leaves-Bokeh-Light-Portrait-Photography-Backgrounds-Customized-Photographic-Backdrops-for-Photo-Studio.jpg_640x640.jpg);
+    /* Esta seccion es formato de fondo (quitar mosaico, ajustar, etc*/
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+    /*Aqui acaba la seccion formato de fondo pagina*/
+}
+
+.container__background-triangle{
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family:Comic Sans MS; color: rgb(0, 0, 0); background-color: rgb(254, 170, 0); border: 1px solid black; text-align: center;
+}
+h4{font-family: 'Courier New', Courier, monospace; color: rgb(0, 0, 0); background-color:  rgb(254, 170, 0);border: 1px solid rgb(0, 0, 0); text-align: center;}
+
+@keyframes t1 {
+    0%{
+        transform: rotate(45deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(45deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+@keyframes t2 {
+    0%{
+        transform: rotate(65deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(65deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(65deg) translateY(0px);
+    }
+}
+
+@keyframes t3 {
+    0%{
+        transform: rotate(45deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(45deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+
+.container__cards{
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card{
+    width: 350px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card:hover .cover__card img{
+    transform: scale(1.1);
+}
+
+.cover__card{
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.cover__card img{
+    width: 110%;
+    transition: all 300ms;
+}
+
+.card h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: rgb(7, 7, 7);
+}
+
+.card p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.5px;
+}
+
+.card hr{
+    margin-top: 30px;
+    border: none;
+    height: 0.2px;
+    background: #F3AE25;
+}
+
+.footer__card{
+    margin-top: 10px;
+    display: flex;
+    color: #000000;
+    justify-content: space-between;
+}
+
+.footer__card h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1200px) {
+    .container__cards{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+</style>
+<body>
+    <h1>AVES</h1>
+
+
+    <div class="container__cards">
+        <div class="card">
+            <div class="cover__card">
+            
+                <img src="https://www.barrameda.com.ar/wp-content/uploads/2019/12/colibri.jpg" alt="">
+            </div>
+            <br>
+            <h4>Colibrí</h4>
+            <h2>Thochilidae</h2>
+            <p>un colibrí se acerca a una persona es porque necesita sanar su corazón y liberar la mala energía. Es señal de perseguir los sueños y no permitir que los obstáculos te detengan. Los movimientos de estas pequeñas aves se consideran un símbolo del logro de objetivos de manera rápida y efectiva.</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="https://blog.gardencenterejea.com/sabias-colibri/"> Ver sitio.</a></h3>
+                <i>Christi Morales</i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cover__card">
+                <img src="https://www.gob.mx/cms/uploads/article/main_image/56130/07_AGUILA1.jpg" alt="">
+            </div>
+            <br>
+            <h4>Águila Real</h4>
+            <h2>Aquila Chrysaetos</h2>
+            <p>Para las culturas indígenas precortesianas era el ave suprema. Su vuelo descendente representaba la caída de la luz sobre la tierra y el advenimiento de la energía vital; con las alas extendidas simbolizaba la cruz que delimita los cuatro rumbos cósmicos del mundo.</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="http://victorestebanblancodiez.blogspot.com/2016/04/el-aguila-real.html">Ver sitio</a></h3>
+                <i>Christi Morales</i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cover__card">
+                <img src="https://d26hokeos06al.cloudfront.net/images/2018-martinpescador-cover.jpg" alt="">
+            </div>
+            <br>
+            <h4>Martín Pescador</h4>
+            <h2>Alcedo atthis</h2>
+            <p>También conocido como picapez, tiene un canto o trino agudo, penetrante y rápido, que emite durante el vuelo y también en reposo. Igualmente, cabe destacar su largo y cónico pico de color negro, que parece desproporcionado en relación a su tamaño.</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="http://entrepinosysembrados.blogspot.com/2019/02/el-martin-pescador.html">Ver sitio</a></h3>
+                <i>Christi Morales</i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cover__card">
+                <img src="https://www.tiendanimal.es/articulos/wp-content/uploads/2020/04/como-cuida-una-ninfa-1200x900.jpg" alt="">
+            </div>
+            <br>
+            <h4>Cacatúa Ninfa o Carolina</h4>
+            <h2>Nymphicus hollandicus</h2>
+            <p>Las ninfas son unas preciosas aves del orden de los psitácidos que pertenecen a la familia de las cacatúas, aunque son bastante más pequeñas. Son originarias de Australia, donde se las puede encontrar en todo el territorio.</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="../Paginas/ave2.html">Ver sitio</a></h3>
+                <i>Christi Morales</i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cover__card">
+                <img src="https://www.bunko.pet/__export/1622244160779/sites/debate/img/2021/05/28/lechuza_crop1622244088389.jpg_1592968467.jpg" alt="">
+            </div>
+            <br>
+            <h4>Lechuza Común</h4>
+            <h2>Tyto alba</h2>
+            <p>Es muy fiel a su pareja. - No hace ningún ruido al volar. Esto es posible gracias a la estructura de sus plumas, que amortiguan el ruido de fricción con el aire. - Es carnívora y aunque engulle totalmente a sus presas, no digiere ni la piel, ni el pelo ni los huesos.</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="../Paginas/ave1.html">Ver sitio</a></h3>
+                <i>Christi Morales</i>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    
+</body>
+</html>

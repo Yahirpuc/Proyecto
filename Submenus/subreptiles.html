@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+    <title>Reptiles</title>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(https://th.bing.com/th/id/R.d1e0f74f81f44f348ef786830c5951bb?rik=FQJ4IZep8YINFQ&pid=ImgRaw&r=0);
+    /* Esta seccion es formato de fondo (quitar mosaico, ajustar, etc*/
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+    /*Aqui acaba la seccion formato de fondo pagina*/
+}
+
+.container__background-triangle{
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family:Comic Sans MS; color: rgb(255, 255, 255); background-color: rgb(16, 80, 26); border: 1px solid black; text-align: center;
+}
+h4{font-family: 'Courier New', Courier, monospace; color: rgb(255, 255, 255); background-color:  rgb(16, 80, 26);border: 1px solid rgb(0, 0, 0); text-align: center;}
+
+@keyframes t1 {
+    0%{
+        transform: rotate(45deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(45deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+@keyframes t2 {
+    0%{
+        transform: rotate(65deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(65deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(65deg) translateY(0px);
+    }
+}
+
+@keyframes t3 {
+    0%{
+        transform: rotate(45deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(45deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+
+.container__cards{
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card{
+    width: 350px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card:hover .cover__card img{
+    transform: scale(1.1);
+}
+
+.cover__card{
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.cover__card img{
+    width: 110%;
+    transition: all 300ms;
+}
+
+.card h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: rgb(7, 7, 7);
+}
+
+.card p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.5px;
+}
+
+.card hr{
+    margin-top: 30px;
+    border: none;
+    height: 0.2px;
+    background: #41414138;
+}
+
+.footer__card{
+    margin-top: 10px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.footer__card h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1200px) {
+    .container__cards{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+</style>
+<body>
+    <h1>REPTILES</h1>
+    <br>
+    <div class="container__cards">
+        <div class="card">
+            <div class="cover__card">
+            
+                <img src="https://p0.pikist.com/photos/338/959/turtle-huge-reptile-aldabra-animal-shell-zoo-range-grass.jpg" alt="">
+            </div>
+            <br>
+            <h4>Tortuga Galapago</h4>
+            <h2>(Geochelone nigra)</h2>
+            <p>Son las tortugas mas grandes, llegan a pesar mas de 400kg y viven hasta 170 años....</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="../Paginas/reptiles1.html"> Ver sitio.</a></h3>
+                <i>Alexander ortiz</i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cover__card">
+                <img src="https://www.naturalezacuriosa.com/wp-content/uploads/2017/10/Crotalus-scutulatus-serpiente-cascabel-mexico.jpg" alt="">
+            </div>
+            <br>
+            <h4>Serpiente de Cascabel</h4>
+            <h2>(Crotalus)</h2>
+            <p>Son reconocidas como las serpientes mas venenosas de norteamérica, pueden llegar a medir hasta 2,5 metros de largo y psar hasta 4hg..... </p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="../Paginas/reptiles1.html">Ver sitio</a></h3>
+                <i>Alexander ortiz</i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cover__card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bradypodion_pumilum_Cape_chameleon_female_IMG_1767_%28cropped%29.jpg/250px-Bradypodion_pumilum_Cape_chameleon_female_IMG_1767_%28cropped%29.jpg" alt="">
+            </div>
+            <br>
+            <h4>Camaleón</h4>
+            <h2>(Chamaeleonidae)</h2>
+            <p>Los camaleones varían grandemente en tamaño, desde los pequeños camaleones de la familia Brookesia los cuales tienen desde 2,9 cm de largo Brookesia micra hasta los grandes de 80 cm...</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="https://es.wikipedia.org/wiki/Chamaeleonidae">Ver sitio</a></h3>
+                <i>Alexander ortiz</i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cover__card">
+                <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/45212756/medium.jpeg" alt="">
+            </div>
+            <br>
+            <h4>Anolis Fantasma</h4>
+            <h2>(Anolis lemurinus)</h2>
+            <p>Anolis lemurinus es una especie de lagarto que pertenece a la familia Dactyloidae.Es nativo de México, Belice, Guatemala, El Salvador, Honduras, Nicaragua, Costa Rica, Panamá, y Colombia. Su rango altitudinal oscila entre 80 y 880 msnm...</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="https://www.naturalista.mx/taxa/116430-Anolis-lemurinus ">Ver sitio</a></h3>
+                <i>Alexander ortiz</i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cover__card">
+                <img src="https://th.bing.com/th/id/OIP.Lp8y0TM0SVHICgN4ebFFEgHaEN?pid=ImgDet&rs=1 " alt="">
+            </div>
+            <br>
+            <h4>Dragon de Comodo</h4>
+            <h2>(Varanus komodoensis)</h2>
+            <p>es una especie de saurópsido de la familia de los varánidos, endémico de algunas islas de Indonesia central.​ Es el lagarto de mayor tamaño del mundo, con una longitud media de dos a tres metros y un peso de unos 70 kg.A consecuencia...</p>
+            <hr>
+            <div class="footer__card">
+                <h3 class="user__name"><a href="https://es.wikipedia.org/wiki/Varanus_komodoensis">Ver sitio</a></h3>
+                <i>Alexander ortiz</i>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    
+</body>
+</html>

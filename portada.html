@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+    <title>Integrantes</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --fill-color: #fdec00;
+  --secondary-color: #3d8bb1;
+  --stroke-color: #0d0d0e;
+  --white: rgba(252, 252, 252, 0.082);
+  --red: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.integrantes{
+    background-color: #020202fb;
+    color: white;
+    text-align: center;
+    height: 100px;
+    font-size: 30px;
+    
+    
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+    background-image: url(https://img2.rtve.es/imagenes/grandes-documentales-encuentros-extranos-sabana/1614967390922.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.blur{
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    
+    
+}
+
+/* MAIN STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.menu {
+  text-align: center;
+}
+
+.has-bg {
+  background: var(--stroke-color);
+  padding: 40px 0 60px 0;
+  margin-top: 20px;
+}
+
+.menu li {
+  margin-top: 25px;
+}
+
+.menu a {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.4;
+  overflow: hidden;
+  color: var(--white);
+  -webkit-text-stroke: 1px var(--stroke-color);
+  /*text-shadow: -1px -1px 0 var(--stroke-color), 1px -1px 0 var(--stroke-color), -1px 1px 0 var(--stroke-color), 1px 1px 0 var(--stroke-color);*/
+}
+
+.has-bg a {
+  color: var(--secondary-color);
+  -webkit-text-stroke: 0;
+}
+
+.menu .outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: var(--fill-color);
+  transform: translateX(-100%);
+}
+
+.menu .inner {
+  display: inline-block;
+  transform: translateX(100%);
+}
+
+.menu a .outer,
+.menu a .inner {
+  transition: transform 0.15s cubic-bezier(0.29, 0.73, 0.74, 1.02);
+}
+
+.menu a:hover .outer,
+.menu a:hover .inner {
+  transform: none;
+}
+
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+[data-animation="to-left"] .outer {
+  transform: translateX(100%);
+}
+
+[data-animation="to-left"] .inner {
+  transform: translateX(-100%);
+}
+
+[data-animation="to-top"] .outer {
+  transform: translateY(100%);
+}
+
+[data-animation="to-top"] .inner {
+  transform: translateY(-100%);
+}
+
+[data-animation="to-bottom"] .outer {
+  transform: translateY(-100%);
+}
+
+[data-animation="to-bottom"] .inner {
+  transform: translateY(100%);
+}
+
+
+.page-footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1rem;
+  color: var(--black);
+}
+
+.page-footer span {
+  color: var(--red);
+}
+
+
+    </style>
+</head>
+<body>
+<div class="integrantes">
+    <h1>Integrantes</h1>
+</div>
+<div class="blur">
+   
+      <ul class="menu">
+        <li>
+          <a href="#0">
+            Morales Basto Christi Roceth
+            <span class="outer" aria-hidden="true">
+              <span class="inner">Morales Basto Christi Roceth</span>
+            </span>
+          </a>
+        </li>
+        <li data-animation="to-left">
+          <a href="#0">
+            Ordoñez Puc Yahir Alberto
+            <span class="outer" aria-hidden="true">
+              <span class="inner">Ordoñez Puc Yahir Alberto</span>
+            </span>
+          </a>
+        </li>
+    </li>
+    <li data-animation="to-bottom">
+        <a href="#0">
+            Huerta Madera Bertha Alicia
+          <span class="outer" aria-hidden="true">
+            <span class="inner">Huerta Madera Bertha Alicia</span>
+          </span>
+        </a>
+      </li>
+    <li data-animation="to-left">
+      <a href="#0">
+        Ortiz Zapata Jose Alexander
+        <span class="outer" aria-hidden="true">
+          <span class="inner">Ortiz Zapata Jose Alexander</span>
+        </span>
+      </a>
+    </li>
+        
+        <li data-animation="to-top">
+          <a href="#0">
+            Gonzales Montero Rodrigo
+            <span class="outer" aria-hidden="true">
+              <span class="inner">Gonzales Montero Rodrigo</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+      
+      
+</div>    
+        
+</body>
+</html>
